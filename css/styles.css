@@ -8,6 +8,7 @@
   --accent-second-color: #333333;
   --paragraph-color: #757575;
   --text-color: #000000;
+  --why-bg-color: rgba(47, 48, 58, 0.8);
   --address-color: rgba(255, 255, 255, 0.6);
   --social-footer-color: rgba(255, 255, 255, 0.1);
   --group-color: #eeeeee;
@@ -330,13 +331,17 @@ img {
 }
 .why-item {
   position: relative;
-  outline: 2px solid green;
 }
 
 .why-text {
   position: absolute;
-  outline: 1px solid red;
-  color: red);
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 0);
+  width: 100%;
+  padding: 27px 0;
+  background-color: var(--why-bg-color);
+  color: var(--background-color);
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
