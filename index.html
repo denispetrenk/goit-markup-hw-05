@@ -133,29 +133,38 @@
         <div class="container">
           <h2 class="title-why">Чим ми займаємося</h2>
           <ul class="why-list list">
-            <li>
+           <!-- текст не накладывается на картинку и не оборачивается в один див картинка с текстом -->
+            <li class="">
+      <div class="why-item">
               <img
                 src="./images/leftpicture.jpg"
                 alt="алгоритм"
                 width="370"
                 height="294"
               />
+              <div class="why-text">десктопні додатки</div>
+            </div>
             </li>
-            <li>
+            <li class="">
+              <div class="why-item">
               <img
                 src="./images/centerpicture.jpg"
                 alt="смартфон"
                 width="370"
                 height="294"
               />
+               <p class="why-text">мобільні додатки</p></div>
             </li>
-            <li>
+            <li >
+<div class="why-item">
               <img
                 src="./images/rightpicture.jpg"
                 alt="десктоп"
                 width="370"
                 height="294"
               />
+                <p class="why-text"> дізайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -456,5 +465,6 @@
     
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

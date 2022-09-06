@@ -16,12 +16,7 @@
   --main-font: "Roboto", sans-serif;
   --second-font: "Raleway", sans-serif;
 }
-/*добавлено в попытке сделать иконку видимой
-li svg:not(:root),
-svg {
-  overflow: visible;
-}
-*/
+
 body {
   /**основные**/
   background-color: var(--background-color);
@@ -96,14 +91,7 @@ img {
   display: inline-block;
   margin-right: 93px;
 }
-/*
-.contacts-link {
-  align-items: center;
-}
-.contacts-link:hover,
-.contacts-link:focus {
-  fill: var(--accent-color);
-}*/
+
 .header {
   width: 696px;
   color: var(--background-color);
@@ -339,6 +327,22 @@ img {
 }
 .work {
   padding-top: 0;
+}
+.why-item {
+  position: relative;
+  outline: 2px solid green;
+}
+
+.why-text {
+  position: absolute;
+  outline: 1px solid red;
+  color: red);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .team-item {
   max-width: 270px;
