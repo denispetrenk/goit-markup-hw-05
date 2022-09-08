@@ -11,6 +11,7 @@
   --why-bg-color: rgba(47, 48, 58, 0.8);
   --address-color: rgba(255, 255, 255, 0.6);
   --social-footer-color: rgba(255, 255, 255, 0.1);
+  --overlay-color: rgba(33, 150, 243, 0.9);
   --group-color: #eeeeee;
   --line-color: #ececec;
   --social-color: #afb1b8;
@@ -119,6 +120,21 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
+.nav-active {
+  position: relative;
+}
+/*  */
+.nav-active:after {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid var(--accent-color);
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
 .navigation-item + .navigation-item {
   margin-left: 50px;
 }
@@ -385,6 +401,37 @@ img {
   padding: 20px 24px;
   border: 1px solid var(--group-color);
   border-top: none;
+}
+.card-set-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--overlay-color);
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-descr {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+
+.card-set:hover .overlay {
+  transform: translateY(0);
 }
 .team-prof {
   font-family: inherit;
